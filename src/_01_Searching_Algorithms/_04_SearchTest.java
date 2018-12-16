@@ -11,16 +11,21 @@ class _04_SearchTest {
 	@Test
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
+		int[] arr1 = new int[7];
+		for(int i = 0; i < 128; i++) {
+			arr1[i] = i;
+		}
+		int[] arr2 = new int[7];
+		for(int i = 0; i < 7; i++) {
+			arr2[i] = (int) Math.pow(2, i);
+		}
 	}
 
 	@Test
 	public void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
-		int[] arr = new int[128];
-		for(int i = 0; i < 128; i++) {
-			arr[i] = i;
-		}
+		
 
 	}
 	
