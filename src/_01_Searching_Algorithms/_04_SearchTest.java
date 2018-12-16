@@ -17,6 +17,11 @@ class _04_SearchTest {
 	public void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
+		int[] arr = new int[128];
+		for(int i = 0; i < 128; i++) {
+			arr[i] = i;
+		}
+
 	}
 	
 	@Test
