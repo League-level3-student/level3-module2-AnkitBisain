@@ -24,7 +24,7 @@ public class _03_ExponentialSearch {
 			counter = counter*2;
 		}
 			//5. inside the while loop, double the value of counter.
-		int minimum;
+		int minimum = 0;
 		//6. create an integer called minimum
 		if(counter < array.length) {
 			minimum = counter;
@@ -36,7 +36,6 @@ public class _03_ExponentialSearch {
 		
 		//8. otherwise, set minimum equal to the length of the array minus 1.
 		
-		binarySearch(array,counter/2,minimum,value);
 		//9. use the binary search method you wrote using the following parameters:
 		//		the array to be searched
 		//		half of the counter
@@ -44,7 +43,7 @@ public class _03_ExponentialSearch {
 		//		the value to be found
 		
 		//10. return the result
-		return 0;
+		return binarySearch(array,counter/2,minimum,value);
 	}
 	
 	public static int binarySearch(int[] array, int start, int end, int value) {
@@ -67,7 +66,7 @@ public class _03_ExponentialSearch {
             //   then return the value returned from a call to the 
             //   binarySearch method. Pass in start and mid - 1
             //   for the end variable.
-			if(array[mid] > value) {
+			if(array[mid] < value) {
 				return binarySearch(array,  mid+1, end ,value);
 			}
             //6. return the value returned from a call to the binarySearch
